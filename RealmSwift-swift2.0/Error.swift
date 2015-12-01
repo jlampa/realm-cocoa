@@ -71,12 +71,10 @@ public enum Error: ErrorType {
     /// the specified file in the specified access mode when the realm is opened.
     case FilePermissionDenied
 
-    /// Error thrown by Realm if no_create was specified and the file did already exist
-    /// when the realm is opened.
+    /// Error thrown by Realm if the file did already exist when a copy should be written.
     case FileExists
 
-    /// Error thrown by Realm if no_create was specified and the file was not found
-    /// when the realm is opened.
+    /// Error thrown by Realm if file was not found when a realm is opened as read-only.
     case FileNotFound
 
     /// Error thrown by Realm if the database file is currently open in another process which

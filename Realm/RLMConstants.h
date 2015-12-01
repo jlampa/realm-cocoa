@@ -69,9 +69,9 @@ typedef NS_ENUM(NSInteger, RLMError) {
     /** Returned by RLMRealm if the user does not have permission to open or create
         the specified file in the specified access mode when the realm is opened. */
     RLMErrorFilePermissionDenied  = 3,
-    /** Returned by RLMRealm if no_create was specified and the file did already exist when the realm is opened. */
+    /** Returned by RLMRealm if the file did already exist when a copy should be written. */
     RLMErrorFileExists            = 4,
-    /** Returned by RLMRealm if no_create was specified and the file was not found when the realm is opened. */
+    /** Returned by RLMRealm if file was not found when a realm is opened as read-only. */
     RLMErrorFileNotFound          = 5,
     /** Returned by RLMRealm if a file format upgrade is required to open the file, but upgrades were explicilty disabled. */
     RLMErrorFileFormatUpgradeRequired = 6,
